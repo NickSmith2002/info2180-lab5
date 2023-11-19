@@ -14,7 +14,7 @@ window.onload = function () {
 
         var country = document.getElementById("country").value;
 
-        var phpurl = "http://localhost/info2180-lab5/world.php?country=" + encodeURIComponent(country);
+        var phpurl = "info2180-lab5/world.php?country=" + encodeURIComponent(country);
 
         httpRequest.onreadystatechange = function () {
             if (httpRequest.readyState === XMLHttpRequest.DONE) {
@@ -34,10 +34,10 @@ window.onload = function () {
     function FindCity(event) {
 
         event.preventDefault();
-        
+
         var country = document.getElementById("country").value;
 
-        var phpurl = "http://localhost/info2180-lab5/world.php?country=" + encodeURIComponent(country) + "&lookup=cities";
+        var phpurl = "info2180-lab5/world.php?country=" + encodeURIComponent(country) + "&lookup=cities";
 
         httpRequest.onreadystatechange = function () {
             if (httpRequest.readyState === XMLHttpRequest.DONE) {
