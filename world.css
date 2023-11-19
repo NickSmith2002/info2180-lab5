@@ -1,1 +1,135 @@
 /* Add your own styles */
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    color: #3d5d6b;
+  }
+
+  /*Header Section*/
+header{
+    background-color: #386482;
+    display: grid;
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    padding: 35px;
+    color:white;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header img{
+    padding: 4px;
+    width: 200px;
+    text-align: center;
+}
+
+header h1{
+    grid-column: 2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Main Section */
+
+main{
+    margin: 60px;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 500px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+}
+
+#lookup{
+    background-color:#63cbf7;
+    padding: 12px;
+    margin: 40px 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+#lookup:hover{
+    border: solid 1px #63cbf7;
+    color: #63cbf7;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+}
+
+#city{
+    background-color:#386482;
+    padding: 12px;
+    margin: 40px 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s;
+
+}
+
+#city:hover{
+    border: solid 1px #386482;
+    color: #386482;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+}
+
+/* Results Table Section */
+#result{
+    padding: 35px;
+    display: flex;
+    margin: 50px;
+}
+tr{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding:5px;
+    text-align: left;
+    border:solid 1px;
+}
+
+th{
+    background-color: #386482;
+    color: white;
+    padding: 10px;
+}
