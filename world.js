@@ -9,8 +9,10 @@ window.onload = function () {
 
     // Function to find Country
     function FindCountry(event) {
+
         event.preventDefault();
-        var country = document.getElementById("country").value; // Move this line inside the function
+
+        var country = document.getElementById("country").value;
 
         var phpurl = "http://localhost/info2180-lab5/world.php?country=" + encodeURIComponent(country);
 
@@ -30,8 +32,10 @@ window.onload = function () {
 
     // Function to find City
     function FindCity(event) {
+
         event.preventDefault();
-        var country = document.getElementById("country").value; // Move this line inside the function
+        
+        var country = document.getElementById("country").value;
 
         var phpurl = "http://localhost/info2180-lab5/world.php?country=" + encodeURIComponent(country) + "&lookup=cities";
 
