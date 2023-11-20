@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+header('Access-Control-Allow-Origin: *');
 $host = 'localhost';
 $username = 'lab5_user';
 $password = 'password123';
@@ -39,8 +41,8 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php if (isset($city)){?>
   <?php
   $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-  $findCity=$conn->query("SELECT cities.name,cities.district, cities.population FROM cities JOIN countries ON cities.country_code=countries.code WHERE countries.name LIKE '%$country%' " );
-  $results = $findCity->fetchAll(PDO::FETCH_ASSOC);
+  $stmt=$conn->query("SELECT cities.name,cities.district, cities.population FROM cities JOIN countries ON cities.country_code=countries.code WHERE countries.name LIKE '%$country%' " );
+  $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
   <table id="cityData">
       <tr>
